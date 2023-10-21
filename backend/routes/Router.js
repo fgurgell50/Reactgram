@@ -1,8 +1,8 @@
 const express = require("express");
-const { route } = require("./UserRoutes");
 const router = express();
 
-router.use('/api/users', require('./UserRoutes'))
+router.use("/api/users", require("./UserRoutes"));
+router.use("/api/photos", require("./PhotoRoutes"));
 
 // test rout
 router.get('/', (req, res) =>{
@@ -10,3 +10,4 @@ router.get('/', (req, res) =>{
 })
 
 module.exports = router
+
