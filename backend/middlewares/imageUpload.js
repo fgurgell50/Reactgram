@@ -18,7 +18,7 @@ const imageStorage = multer.diskStorage({
     }
 
     //console.log(`Diretório de destino determinado: backend/uploads/${folder}/`);
-    cb(null, `backend/uploads/${folder}/`);
+    cb(null, `uploads/${folder}/`);
   },
   filename: (req, file, cb) => {
     const generatedFilename = Date.now() + path.extname(file.originalname);
