@@ -1,4 +1,6 @@
 export const api = "http://localhost:5000/api"
+//export const uploads = "http://localhost:5000/api/uploads"
+// correcao para pegar a img 
 export const uploads = "http://localhost:5000/api/uploads"
 
 // metodos da req, dados q serao enviados, token , imagem
