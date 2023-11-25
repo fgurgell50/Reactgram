@@ -81,7 +81,7 @@ const EditProfile = () => {
 
     }
 
-    const handleFile = (e) => {
+    const handleFile = (e) => { 
         //image preview
         const image = e.target.files[0]
         setPreviewImage(image)

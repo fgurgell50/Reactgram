@@ -1,7 +1,7 @@
 export const api = "http://localhost:5000/api"
 //export const uploads = "http://localhost:5000/api/uploads"
 // correcao para pegar a img 
-export const uploads = "http://localhost:5000/api/uploads"
+export const uploads = "http://localhost:5000/uploads"
 
 // metodos da req, dados q serao enviados, token , imagem
 export const requestConfig = ( method, data, token = null, image = null) => {
