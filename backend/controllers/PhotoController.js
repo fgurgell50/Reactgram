@@ -10,7 +10,7 @@ const insertPhoto = async (req, res) => {
     const { title } = req.body;
     const image = req.file.filename;
   
-    console.log('REQUSER', req._id);
+    //console.log('REQUSER', req._id);
   
     const reqUser = req.user;
     

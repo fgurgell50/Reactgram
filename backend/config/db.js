@@ -11,9 +11,10 @@ const conn = () => {
         const dbConn =  mongoose.connect( 
             `mongodb+srv://${dbUser}:${dbPassword}@cluster0.xbhlxut.mongodb.net/?retryWrites=true&w=majority`
         )
-        console.log('Conectou ao Banco de Dados!')    
+        console.log('Conectou ao Banco de Dados com Sucesso!')    
         return dbConn
     } catch (error) {
+        console.log('Problema ao se conectar ao Banco de Dados!')
         console.log(error)
     }
 }
