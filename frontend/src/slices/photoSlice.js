@@ -35,7 +35,7 @@ export const getUserPhotos = createAsyncThunk(
 
         const token = thunkAPI.getState().auth.user.token
         const data = await photoService.getUserPhotos(id, token)
-        console.log('DATA', data)     
+       // console.log('DATA', data)     
         return data
 
     }
@@ -252,7 +252,6 @@ export const photoSlice = createSlice({
             //feed de fotos, na Home ou na busca
             state.photos.map((photo) => {
                 if (photo._id === action.payload.photoid) {
-                    console.log("RETURN", photo.likes)
                   return photo.likes.push(action.payload.userId)
                 }
                 return photo;

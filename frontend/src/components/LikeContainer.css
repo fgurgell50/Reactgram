@@ -12,6 +12,7 @@
 .like svg {
   font-size: 1.5em;
   cursor: pointer;
+  border-color: whitesmoke;
 }
 
 .like p {
