@@ -27,6 +27,7 @@ const Home = () => {
     dispatch(getPhotos());
   }, [dispatch]);
 
+  // Like a Photo
   const handleLike = (photo) => {
  
     dispatch(like(photo._id));
